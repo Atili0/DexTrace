@@ -33,7 +33,7 @@ Here you will see all your trace saved.
  > Trace Config
 	You want to configurate what do you want to do in the trace
 	
-**Fields**
+**Fields**  
 **Name:**  Here you need to paste the exact name of your class.  
 **Is Debug Enabled?:**  This field has two options:  
 Yes(Sí) -> The trace will work and save all messaje in the debug method  
