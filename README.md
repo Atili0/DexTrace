@@ -53,3 +53,6 @@ Yes(Sí) -> The trace will show some message to the client
 No -> Does not work.  
 
 ![enter image description here](http://www.dexrm.com/wp-content/uploads/2018/07/2018-07-13_13h09_32.png)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTMxMjQwNzU5M119
+-->
