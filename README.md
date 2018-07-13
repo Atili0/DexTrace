@@ -19,7 +19,8 @@ In Dynamics 365 will create tow entities.
 
 ![enter image description here](http://www.dexrm.com/wp-content/uploads/2018/07/2018-07-13_13h04_39.png)
 
-> Trace
+> Trace  
+
 Here you will see all your trace saved.
 
 **Field**
@@ -34,8 +35,9 @@ Save all you were configurated in the debug method
 	
 ![enter image description here](http://www.dexrm.com/wp-content/uploads/2018/07/2018-07-13_13h08_45.png)
 
- > Trace Config
-	You want to configurate what do you want to do in the trace
+ > Trace Config  
+ 
+You want to configurate what do you want to do in the trace
 	
 **Fields**
 **Name:**  Here you need to paste the exact name of your class.  
