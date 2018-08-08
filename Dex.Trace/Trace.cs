@@ -22,6 +22,9 @@
         public OrganizationServiceContext OrgContext { get; set; }
         public Guid g_Trace { get; set; }
         public System.Text.StringBuilder sb_info { get; set; }
+        public bool b_SaveInFile { get; set; }
+        public String s_FileName { get; set; }
+
 
         const string s_TraceConfig = "dx_traceconfig";
         
@@ -30,11 +33,13 @@
         /// 
         /// </summary>
         /// <param name="p_orgService"></param>
-        public Trace(IOrganizationService p_orgService, string p_PluginName)
+        public Trace(IOrganizationService p_orgService, string p_PluginName, int p_AppType)
         {
             #region Create Services Organization
             this.OrgService = p_orgService;
+            //if(p_AppType.Equals(AppType.Plugin) && p_AppType.Equals(AppType.WorkFlow))
             this.OrgContext = new OrganizationServiceContext(p_orgService);
+
             this.sb_info = new System.Text.StringBuilder();
             #endregion
 
@@ -47,13 +52,18 @@
                                   b_IsDebugEnabled = a.Attributes["dx_isdebugenabled"],
                                   b_IsInfoEnabled = a.Attributes["dx_isinfoenabled"],
                                   b_ShowMessage = a.Attributes["dx_showmessageclient"],
-                                  g_TraceConfigId = a.Attributes["dx_traceconfigid"]
+                                  g_TraceConfigId = a.Attributes["dx_traceconfigid"],
+                                  bol_SaveInFile = a.Attributes["dx_saveinfile"],
+                                  str_FileName = a.Attributes["dx_filename"]
+
                               }).FirstOrDefault();
 
                 this.b_IsDebugEnabled = Boolean.Parse(config_trace.b_IsDebugEnabled.ToString());
                 this.b_IsInfoEnabled = Boolean.Parse(config_trace.b_IsInfoEnabled.ToString());
                 this.b_ShowMessage = Boolean.Parse(config_trace.b_ShowMessage.ToString());
                 this.g_TraceConfigId = Guid.Parse(config_trace.g_TraceConfigId.ToString());
+                this.b_SaveInFile = Boolean.Parse(config_trace.bol_SaveInFile.ToString());
+                this.s_FileName = config_trace.str_FileName.ToString();
             };
             #endregion
 
@@ -144,7 +154,7 @@
             
         }
 
-        public void SaveInfoInTrace(string p_messageInfo)
+        private void SaveInfoInTrace(string p_messageInfo)
         {
             var buffer = DateFormat.buffer;
             new DateFormat().GetCompleteDate(DateTime.UtcNow, out buffer);
@@ -160,7 +170,7 @@
             OrgContext.SaveChanges();
         }
 
-        public void SaveInfoInTrace(string p_messageInfo, string p_completeError)
+        private void SaveInfoInTrace(string p_messageInfo, string p_completeError)
         {
             var buffer = DateFormat.buffer;
             new DateFormat().GetCompleteDate(DateTime.UtcNow, out buffer);
@@ -175,11 +185,12 @@
                 dx_traceconfigid = new EntityReference(s_TraceConfig, this.g_TraceConfigId)
             };
 
+            
             OrgContext.AddObject(m_trace);
             OrgContext.SaveChanges();
         }
 
-        public void SaveErrorInTrace(string p_messageError)
+        private void SaveErrorInTrace(string p_messageError)
         {
             var buffer = DateFormat.buffer;
             new DateFormat().GetCompleteDate(DateTime.UtcNow, out buffer);
@@ -202,7 +213,7 @@
         /// </summary>
         /// <param name="p_messageError"></param>
         /// <param name="p_Exception"></param>
-        public void SaveErrorInTrace(string p_messageError, Exception p_Exception)
+        private void SaveErrorInTrace(string p_messageError, Exception p_Exception)
         {
             
             var buffer = DateFormat.buffer;
@@ -231,10 +242,15 @@
             OrgContext.AddObject(m_trace);
             OrgContext.SaveChanges();
 
-            //if (!b_ShowMessage)
-            //{
-            //    throw new InvalidPluginExecutionException(p_messageError);
-            //}
         }
+
+        
+    }
+
+    public static class AppType
+    {
+        public const int Window = 1;
+        public const int Plugin = 2;
+        public const int WorkFlow = 3;
     }
 }

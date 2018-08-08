@@ -18,9 +18,5 @@
         void Error (string message);
         void Error(Exception p_message);
         void Error(string message, Exception exception);
-        void SaveInfoInTrace(string p_messageInfo);
-        void SaveInfoInTrace(string p_messageInfo, string p_completeError);
-        void SaveErrorInTrace(string p_messageError);
-        void SaveErrorInTrace(string p_messageError, Exception p_Exception);
     }
 }
