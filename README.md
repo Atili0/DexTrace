@@ -14,6 +14,8 @@ Test
 
 ## What this project create in D365?
 
+    The solution has exported with SolutionExported tool in SDK. 
+
 In Dynamics 365 will create tow entities.
 
  - Trace
@@ -55,6 +57,6 @@ No -> Does not work.
 
 ![enter image description here](http://www.dexrm.com/wp-content/uploads/2018/07/2018-07-13_13h09_32.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5Mjk2ODU5NiwxNjE5NzQxMTM2LDEzMT
+eyJoaXN0b3J5IjpbMTYxNzI0NTU3NiwxNjE5NzQxMTM2LDEzMT
 I0MDc1OTNdfQ==
 -->
