@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships>
+  <EntityRelationship Name="business_unit_dx_trace" />
+  <EntityRelationship Name="business_unit_dx_traceconfig" />
+  <EntityRelationship Name="dx_traceconfig_dx_trace" />
+  <EntityRelationship Name="lk_dx_trace_createdby" />
+  <EntityRelationship Name="lk_dx_trace_modifiedby" />
+  <EntityRelationship Name="lk_dx_traceconfig_createdby" />
+  <EntityRelationship Name="lk_dx_traceconfig_modifiedby" />
+  <EntityRelationship Name="owner_dx_trace" />
+  <EntityRelationship Name="owner_dx_traceconfig" />
+  <EntityRelationship Name="team_dx_trace" />
+  <EntityRelationship Name="team_dx_traceconfig" />
+  <EntityRelationship Name="user_dx_trace" />
+  <EntityRelationship Name="user_dx_traceconfig" />
+</EntityRelationships>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{4a88c73d-9170-e811-a833-000d3ab48607}</WebResourceId>
+  <Name>dx_/images/config_16.png</Name>
+  <DisplayName>dx_/images/config_16.png</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/dx_imagesconfig_16png4A88C73D-9170-E811-A833-000D3AB48607</FileName>
+</WebResource>

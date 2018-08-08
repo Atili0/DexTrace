@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<systemform>
+  <formid>{2734388b-0b45-44f2-88ea-03127b61f635}</formid>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FormPresentation>1</FormPresentation>
+  <FormActivationState>1</FormActivationState>
+  <form>
+    <tabs>
+      <tab verticallayout="true" id="{3a14e68a-d41b-4cb9-8d59-af27602fbb67}" IsUserDefined="1">
+        <labels>
+          <label description="General" languagecode="1033" />
+        </labels>
+        <columns>
+          <column width="100%">
+            <sections>
+              <section showlabel="false" showbar="false" IsUserDefined="0" id="{9c4e4c74-0f37-4d22-b146-0b04b3989bf0}">
+                <labels>
+                  <label description="General" languagecode="1033" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell id="{9c14fe2d-002a-4601-89bf-70606b54e3b4}">
+                      <labels>
+                        <label description="Name" languagecode="1033" />
+                      </labels>
+                      <control id="dx_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dx_name" />
+                    </cell>
+                  </row>
+                  <row>
+                    <cell id="{bd7ec0b9-d3bf-4b84-a96b-d978c1c6e704}">
+                      <labels>
+                        <label description="Owner" languagecode="1033" />
+                      </labels>
+                      <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                    </cell>
+                  </row>
+                  <row>
+                    <cell id="{4965ce42-cb1e-2659-aab6-1393e58e500a}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="Trace Config" languagecode="1033" />
+                      </labels>
+                      <control id="dx_traceconfigid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="dx_traceconfigid" disabled="false" />
+                    </cell>
+                  </row>
+                </rows>
+              </section>
+            </sections>
+          </column>
+        </columns>
+      </tab>
+      <tab name="tab_trace" id="{a77cd437-902c-d743-9bb8-26ec63d3636c}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+        <labels>
+          <label description="Trace" languagecode="1033" />
+        </labels>
+        <columns>
+          <column width="100%">
+            <sections>
+              <section name="tab_trace_section_2" showlabel="true" showbar="true" locklevel="0" id="{4c97d0e9-3303-bd6c-0b59-1b7c8bd1e059}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" height="auto">
+                <labels>
+                  <label description="Parameters" languagecode="1033" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell id="{74e30e4d-0a14-96da-3220-a0ac56b7d830}" showlabel="false" locklevel="0" colspan="2" auto="true" rowspan="5">
+                      <labels>
+                        <label description="Trace Parameter" languagecode="1033" />
+                      </labels>
+                      <control id="dx_traceparameter" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dx_traceparameter" disabled="false" uniqueid="{64b28a0a-4a93-a41c-92ca-752a05819529}" />
+                    </cell>
+                  </row>
+                  <row />
+                  <row />
+                  <row />
+                  <row height="auto" />
+                </rows>
+              </section>
+              <section name="tab_message" showlabel="true" showbar="true" locklevel="0" id="{341340d8-509e-e2b0-e85d-2b3ce603869e}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" height="auto" celllabelalignment="Left" celllabelposition="Left">
+                <labels>
+                  <label description="Message" languagecode="1033" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell id="{bdc5c132-d881-e03c-9c37-e09b7eb31b4d}" showlabel="false" locklevel="0" rowspan="5">
+                      <labels>
+                        <label description="Trace Text" languagecode="1033" />
+                      </labels>
+                      <control id="dx_tracetext" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dx_tracetext" disabled="false" uniqueid="{e3eab290-61b9-12ec-b870-4eaba2a7a3e1}" />
+                    </cell>
+                  </row>
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                  <row>
+                    <cell id="{2163a276-db67-c0c3-7a98-7654b777628c}" showlabel="false" locklevel="0" rowspan="10">
+                      <labels>
+                        <label description="Message Exception" languagecode="1033" />
+                      </labels>
+                      <control id="dx_messageexception" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dx_messageexception" disabled="false" uniqueid="{1b439e57-63bb-d0eb-1e07-151dc0535167}" />
+                    </cell>
+                  </row>
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                  <row>
+                    <cell id="{836883cd-096c-c626-5ae0-7318c9934718}" showlabel="false" locklevel="0" rowspan="5">
+                      <labels>
+                        <label description="Message Info" languagecode="1033" />
+                      </labels>
+                      <control id="dx_messageinfo" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dx_messageinfo" disabled="false" uniqueid="{ab589d9c-0d8c-1b62-4100-67b00aba1d8a}" />
+                    </cell>
+                  </row>
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                </rows>
+              </section>
+            </sections>
+          </column>
+        </columns>
+      </tab>
+    </tabs>
+    <Navigation>
+      <NavBar></NavBar>
+      <NavBarAreas>
+        <NavBarArea Id="Info">
+          <Titles>
+            <Title LCID="1033" Text="Common" />
+          </Titles>
+        </NavBarArea>
+        <NavBarArea Id="Sales">
+          <Titles>
+            <Title LCID="1033" Text="Sales" />
+          </Titles>
+        </NavBarArea>
+        <NavBarArea Id="Service">
+          <Titles>
+            <Title LCID="1033" Text="Service" />
+          </Titles>
+        </NavBarArea>
+        <NavBarArea Id="Marketing">
+          <Titles>
+            <Title LCID="1033" Text="Marketing" />
+          </Titles>
+        </NavBarArea>
+        <NavBarArea Id="ProcessCenter">
+          <Titles>
+            <Title LCID="1033" Text="Process Sessions" />
+          </Titles>
+        </NavBarArea>
+      </NavBarAreas>
+    </Navigation>
+    <controlDescriptions />
+  </form>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <LocalizedNames>
+    <LocalizedName description="Information" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="A form for this entity." languagecode="1033" />
+  </Descriptions>
+</systemform>

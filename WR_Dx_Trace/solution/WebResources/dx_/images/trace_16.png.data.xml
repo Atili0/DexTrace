@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{1516899c-9070-e811-a834-000d3ab48443}</WebResourceId>
+  <Name>dx_/images/trace_16.png</Name>
+  <DisplayName>dx_/images/trace_16.png</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/dx_imagestrace_16png1516899C-9070-E811-A834-000D3AB48443</FileName>
+</WebResource>

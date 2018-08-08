@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<systemform>
+  <formid>{ee3d99fa-f709-4844-8a97-8acf30d06c73}</formid>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FormPresentation>1</FormPresentation>
+  <FormActivationState>1</FormActivationState>
+  <form>
+    <tabs>
+      <tab verticallayout="true" id="{64c67200-fe81-4cc3-b049-ac52efda10d9}" IsUserDefined="1">
+        <labels>
+          <label description="General" languagecode="1033" />
+        </labels>
+        <columns>
+          <column width="100%">
+            <sections>
+              <section showlabel="false" showbar="false" IsUserDefined="0" id="{21efa9e8-f2e5-4fcc-b030-a1781b91a14f}">
+                <labels>
+                  <label description="General" languagecode="1033" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell id="{cf8be993-6583-4fdf-bdae-4a853f1876d2}">
+                      <labels>
+                        <label description="Name" languagecode="1033" />
+                      </labels>
+                      <control id="dx_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dx_name" />
+                    </cell>
+                  </row>
+                  <row>
+                    <cell id="{b6f2c633-5af2-4ad1-98a7-7198cee40081}">
+                      <labels>
+                        <label description="Owner" languagecode="1033" />
+                      </labels>
+                      <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                    </cell>
+                  </row>
+                  <row>
+                    <cell id="{27169bd4-eaa8-e7b7-3581-7794348cd7aa}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="Is Debug Enabled?" languagecode="1033" />
+                      </labels>
+                      <control id="dx_isdebugenabled" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="dx_isdebugenabled" disabled="false" />
+                    </cell>
+                  </row>
+                  <row>
+                    <cell id="{98b09b20-70a7-0d33-e16d-0dd459b21339}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="Is Info Enabled?" languagecode="1033" />
+                      </labels>
+                      <control id="dx_isinfoenabled" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="dx_isinfoenabled" disabled="false" />
+                    </cell>
+                  </row>
+                  <row>
+                    <cell id="{c6bd6471-16c6-ac15-1899-7bb98497b996}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="Save in file" languagecode="1033" />
+                      </labels>
+                      <control id="dx_saveinfile" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="dx_saveinfile" disabled="false" uniqueid="{86b99756-499b-c351-cd15-ccd466eadcdc}" />
+                    </cell>
+                  </row>
+                  <row>
+                    <cell id="{2877619a-7187-0622-38b2-dbea2c8bb842}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="File name" languagecode="1033" />
+                      </labels>
+                      <control id="dx_filename" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dx_filename" disabled="false" uniqueid="{29c932b3-c451-4b36-85a9-310bd478911c}" />
+                    </cell>
+                  </row>
+                  <row>
+                    <cell id="{8a73a297-5841-ccda-9b65-62ea7d0a1b23}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="Show Message Client" languagecode="1033" />
+                      </labels>
+                      <control id="dx_showmessageclient" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="dx_showmessageclient" disabled="false" />
+                    </cell>
+                  </row>
+                  <row>
+                    <cell id="{376a8172-1c3e-3913-c7eb-ccb55b2968c5}" showlabel="false" colspan="1" auto="false" rowspan="6">
+                      <labels>
+                        <label description="Trace (Trace Config)" languagecode="1033" />
+                      </labels>
+                      <control id="Trace" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                        <parameters>
+                          <ViewId>{7751C3FE-1180-46CB-93C7-59A6603D0255}</ViewId>
+                          <IsUserView>false</IsUserView>
+                          <RelationshipName>dx_traceconfig_dx_trace</RelationshipName>
+                          <TargetEntityType>dx_trace</TargetEntityType>
+                          <AutoExpand>Fixed</AutoExpand>
+                          <EnableQuickFind>false</EnableQuickFind>
+                          <EnableViewPicker>false</EnableViewPicker>
+                          <ViewIds>{7751C3FE-1180-46CB-93C7-59A6603D0255}</ViewIds>
+                          <EnableJumpBar>false</EnableJumpBar>
+                          <ChartGridMode>All</ChartGridMode>
+                          <VisualizationId />
+                          <IsUserChart>false</IsUserChart>
+                          <EnableChartPicker>true</EnableChartPicker>
+                          <RecordsPerPage>4</RecordsPerPage>
+                        </parameters>
+                      </control>
+                    </cell>
+                  </row>
+                  <row></row>
+                  <row />
+                  <row />
+                  <row />
+                  <row />
+                </rows>
+              </section>
+            </sections>
+          </column>
+        </columns>
+      </tab>
+    </tabs>
+    <Navigation>
+      <NavBar></NavBar>
+      <NavBarAreas>
+        <NavBarArea Id="Info">
+          <Titles>
+            <Title LCID="1033" Text="Common" />
+          </Titles>
+        </NavBarArea>
+        <NavBarArea Id="Sales">
+          <Titles>
+            <Title LCID="1033" Text="Sales" />
+          </Titles>
+        </NavBarArea>
+        <NavBarArea Id="Service">
+          <Titles>
+            <Title LCID="1033" Text="Service" />
+          </Titles>
+        </NavBarArea>
+        <NavBarArea Id="Marketing">
+          <Titles>
+            <Title LCID="1033" Text="Marketing" />
+          </Titles>
+        </NavBarArea>
+        <NavBarArea Id="ProcessCenter">
+          <Titles>
+            <Title LCID="1033" Text="Process Sessions" />
+          </Titles>
+        </NavBarArea>
+      </NavBarAreas>
+    </Navigation>
+    <controlDescriptions />
+  </form>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <LocalizedNames>
+    <LocalizedName description="Information" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="A form for this entity." languagecode="1033" />
+  </Descriptions>
+</systemform>
