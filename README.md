@@ -10,7 +10,7 @@ Project
 Test  
 2. [PL_TRACE_TEST](https://github.com/Atili0/DexTrace/tree/master/PL_TRACE_TEST"PL_TRACE_TEST")  
 3. [TRACE_TEST](https://github.com/Atili0/DexTrace/tree/master/TRACE_TEST"TRACE_TEST")  
-4. Solution
+4. [Solution](https://github.com/Atili0/DexTrace/tree/master/WR_Dx_Trace/solution)
 
 ## What this project create in D365?
 
@@ -55,5 +55,6 @@ No -> Does not work.
 
 ![enter image description here](http://www.dexrm.com/wp-content/uploads/2018/07/2018-07-13_13h09_32.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxOTc0MTEzNiwxMzEyNDA3NTkzXX0=
+eyJoaXN0b3J5IjpbMjA5Mjk2ODU5NiwxNjE5NzQxMTM2LDEzMT
+I0MDc1OTNdfQ==
 -->
