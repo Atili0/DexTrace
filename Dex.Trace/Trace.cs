@@ -33,7 +33,7 @@
         /// 
         /// </summary>
         /// <param name="p_orgService"></param>
-        public Trace(IOrganizationService p_orgService, string p_PluginName, int p_AppType)
+        public Trace(IOrganizationService p_orgService, string p_PluginName)
         {
             #region Create Services Organization
             this.OrgService = p_orgService;
